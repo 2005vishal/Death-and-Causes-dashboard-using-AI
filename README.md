@@ -33,3 +33,69 @@ Follow these steps to run the dashboard on your local machine.
 ```bash
 git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
 cd YOUR_REPO_NAME
+
+```
+
+### 2. Install Dependencies
+
+Make sure you have Python installed. Then run:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+### 3. Set up the API Key
+
+This project requires a Google Gemini API Key.
+
+1. Get your key from [Google AI Studio](https://aistudio.google.com/).
+2. Create a file named `.env` in the root folder.
+3. Add your key inside:
+
+```properties
+GOOGLE_API_KEY="your_actual_api_key_here"
+
+```
+
+*(Note: If deploying to Streamlit Cloud, add this key to the "Secrets" settings instead of a .env file.)*
+
+### 4. Run the App
+
+```bash
+streamlit run main.py
+
+```
+
+## 📂 Project Structure
+
+```text
+├── main.py                     # The main Streamlit application code
+├── requirements.txt            # List of Python dependencies
+├── deaths_and_causes_synthetic.csv  # The dataset (bundled for deployment)
+├── README.md                   # Project documentation
+└── .gitignore                  # Files to exclude from GitHub
+
+```
+
+## 🛡️ Security Note
+
+This project uses **Streamlit Secrets** management to keep the API key safe. The key is never hardcoded in the script. When deploying, ensure the key is added to the hosting platform's environment variables or secrets manager.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+
+```
+
+### 📝 What to do next:
+1.  **Create the file:** In your project folder (`D:\death&Causes`), create a text file named `README.md`.
+2.  **Paste:** Paste the code above into it.
+3.  **Update the Link:** Once you deploy your app on Streamlit Cloud, come back and replace `YOUR_STREAMLIT_APP_URL_HERE` with the actual link so people can click it!
+4.  **Push:** Run `git add .`, `git commit -m "Add README"`, and `git push` to send it to GitHub.
+
+```
