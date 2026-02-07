@@ -7,7 +7,7 @@
 An interactive data analytics dashboard that visualizes mortality trends and uses **Google's Gemini AI** to generate instant insights, summaries, and explanations of the data.
 
 ## 🚀 Live Demo
-**[Click here to view the deployed app](YOUR_STREAMLIT_APP_URL_HERE)**
+**[[Click here to view the deployed app](YOUR_STREAMLIT_APP_URL_HERE)](https://death-and-causes-dashboard-using-ai-fknvnxcqsyxjlnipwppgup.streamlit.app/)**
 *(Replace this link after you deploy on Streamlit Cloud)*
 
 ## 📊 Key Features
